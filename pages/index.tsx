@@ -289,13 +289,12 @@ export default function Home() {
                             size="xl"
                             border= "solid black"
                             bg="white"
-                            color="black"
                             borderRadius="2px"
                             fontFamily={"Inter"}
                           >
                             {option.map((opt, idx) => {
                               return (
-                                <option key={idx} value={idx}>
+                                <option key={idx} value={idx} color="black">
                                   {opt}
                                 </option>
                               );
@@ -316,7 +315,7 @@ export default function Home() {
                           borderWidth={0}
                           borderRadius={4}
                           p={10}
-                          px={"36px"}
+                          px={"1.5vw"}
                           _hover={{
                             bgColor: "#84aca4",
                             cursor: "pointer",
@@ -403,10 +402,10 @@ export default function Home() {
                     justifyContent="center"
                     fontFamily={"Inter"}
                   >
-                    <Text fontSize="2vw" fontWeight={"semibold"} mr={8} color="black">
+                    <Text fontSize="2vw" fontWeight={"800"} mr={4} color="black">
                       Hasil Diagnosis :
                     </Text>
-                    <Text fontSize="2vw" fontWeight={"semibold"} color="black">
+                    <Text fontSize="2vw" fontWeight={"800"} color="black">
                       {status}
                     </Text>
                   </Flex>
