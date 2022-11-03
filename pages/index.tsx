@@ -221,7 +221,7 @@ export default function Home() {
               borderRadius="4px"
             />
             <Text
-              fontSize="40px"
+              fontSize="4vw"
               ml="auto"
               mr="auto"
               fontWeight={"semibold"}
@@ -231,7 +231,7 @@ export default function Home() {
             </Text>
           </HStack>
           <Text
-            fontSize="16px"
+            fontSize="1vw"
             ml="auto"
             mr="auto"
             fontWeight={"thin"}
@@ -249,7 +249,7 @@ export default function Home() {
                 rightIcon={<ChevronRightIcon />}
                 color="white"
                 bg="#1c5c54"
-                fontSize="16px"
+                fontSize="1vw"
                 fontFamily={"Inter"}
                 borderWidth={0}
                 borderRadius={4}
@@ -270,7 +270,7 @@ export default function Home() {
             <Box bg="#f3f3f3" h="90%">
               <Flex
                 mx="auto"
-                width={"800px"}
+                width="80%"
                 height="auto"
                 p="10px"
                 direction={"column"}
@@ -287,7 +287,6 @@ export default function Home() {
                           <Select
                             onChange={handleChange}
                             size="lg"
-                            h="32px"
                             borderColor={"white"}
                             borderRadius="2px"
                             shadow="1px 1px 1px 1px #747474"
@@ -316,7 +315,7 @@ export default function Home() {
                           value="Submit"
                           color="white"
                           bg="#1c5c54"
-                          fontSize="14px"
+                          fontSize="1vw"
                           fontFamily={"Inter"}
                           borderWidth={0}
                           borderRadius={4}
@@ -335,7 +334,7 @@ export default function Home() {
                         rightIcon={<ChevronRightIcon />}
                         color="white"
                         bg="#1c5c54"
-                        fontSize="16px"
+                        fontSize="1vw"
                         fontFamily={"Inter"}
                         borderWidth={0}
                         borderRadius={4}
@@ -358,7 +357,7 @@ export default function Home() {
                     <Text
                       color="#747474"
                       mt={1}
-                      fontSize="10px"
+                      fontSize="0.8vw"
                       fontFamily={"Inter"}
                       mx={2}
                     >
@@ -368,7 +367,7 @@ export default function Home() {
                     <Text
                       color="#747474"
                       mt={1}
-                      fontSize="10px"
+                      fontSize="0.8vw"
                       fontFamily={"Inter"}
                       mx={2}
                     >
@@ -378,7 +377,7 @@ export default function Home() {
                     <Text
                       color="#747474"
                       mt={1}
-                      fontSize="10px"
+                      fontSize="0.8vw"
                       fontFamily={"Inter"}
                       mx={2}
                     >
@@ -389,7 +388,7 @@ export default function Home() {
                     <Text
                       color="#747474"
                       mt={1}
-                      fontSize="10px"
+                      fontSize="0.8vw"
                       fontFamily={"Inter"}
                       mx={2}
                     >
@@ -408,10 +407,10 @@ export default function Home() {
                     justifyContent="center"
                     fontFamily={"Inter"}
                   >
-                    <Text fontSize="24px" fontWeight={800} mr={8}>
+                    <Text fontSize="2vw" fontWeight={800} mr={8}>
                       Hasil Diagnosis :
                     </Text>
-                    <Text fontSize="24px" fontWeight={800}>
+                    <Text fontSize="2vw" fontWeight={800}>
                       {status}
                     </Text>
                   </Flex>
