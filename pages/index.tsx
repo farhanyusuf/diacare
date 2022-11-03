@@ -221,16 +221,17 @@ export default function Home() {
               borderRadius="4px"
             />
             <Text
-              fontSize="4vw"
+              fontSize="48px"
               textAlign={"center"}
               fontWeight={"semibold"}
               fontFamily="Inter"
+              color="black"
             >
               Diacare
             </Text>
           </HStack>
           <Text
-            fontSize="1vw"
+            fontSize="1.5vw"
             ml="auto"
             mr="auto"
             fontWeight={"thin"}
@@ -248,7 +249,7 @@ export default function Home() {
                 rightIcon={<ChevronRightIcon />}
                 color="white"
                 bg="#1c5c54"
-                fontSize="1vw"
+                fontSize="1.5vw"
                 fontFamily={"Inter"}
                 borderWidth={0}
                 borderRadius={4}
@@ -287,6 +288,8 @@ export default function Home() {
                             onChange={handleChange}
                             size="xl"
                             border= "solid black"
+                            bg="white"
+                            color="black"
                             borderRadius="2px"
                             fontFamily={"Inter"}
                           >
@@ -308,7 +311,7 @@ export default function Home() {
                           value="Submit"
                           color="white"
                           bg="#1c5c54"
-                          fontSize="1vw"
+                          fontSize="1.5vw"
                           fontFamily={"Inter"}
                           borderWidth={0}
                           borderRadius={4}
@@ -327,7 +330,7 @@ export default function Home() {
                         rightIcon={<ChevronRightIcon />}
                         color="white"
                         bg="#1c5c54"
-                        fontSize="1vw"
+                        fontSize="1.5vw"
                         fontFamily={"Inter"}
                         borderWidth={0}
                         borderRadius={4}
@@ -350,7 +353,7 @@ export default function Home() {
                     <Text
                       color="#747474"
                       mt={1}
-                      fontSize="0.8vw"
+                      fontSize="1vw"
                       fontFamily={"Inter"}
                       mx={2}
                     >
@@ -360,7 +363,7 @@ export default function Home() {
                     <Text
                       color="#747474"
                       mt={1}
-                      fontSize="0.8vw"
+                      fontSize="1vw"
                       fontFamily={"Inter"}
                       mx={2}
                     >
@@ -370,7 +373,7 @@ export default function Home() {
                     <Text
                       color="#747474"
                       mt={1}
-                      fontSize="0.8vw"
+                      fontSize="1vw"
                       fontFamily={"Inter"}
                       mx={2}
                     >
@@ -381,7 +384,7 @@ export default function Home() {
                     <Text
                       color="#747474"
                       mt={1}
-                      fontSize="0.8vw"
+                      fontSize="1vw"
                       fontFamily={"Inter"}
                       mx={2}
                     >
@@ -400,10 +403,10 @@ export default function Home() {
                     justifyContent="center"
                     fontFamily={"Inter"}
                   >
-                    <Text fontSize="2vw" fontWeight={"semibold"} mr={8}>
+                    <Text fontSize="2vw" fontWeight={"semibold"} mr={8} color="black">
                       Hasil Diagnosis :
                     </Text>
-                    <Text fontSize="2vw" fontWeight={"semibold"}>
+                    <Text fontSize="2vw" fontWeight={"semibold"} color="black">
                       {status}
                     </Text>
                   </Flex>
