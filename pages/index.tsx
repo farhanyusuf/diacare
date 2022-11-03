@@ -300,7 +300,11 @@ export default function Home() {
                           >
                             {option.map((opt, idx) => {
                               return (
-                                <option key={idx} value={idx} font-color="black">
+                                <option
+                                  key={idx}
+                                  value={idx}
+                                  color="black"
+                                >
                                   {opt}
                                 </option>
                               );
@@ -310,22 +314,14 @@ export default function Home() {
                       </label>
                       <Divider />
 
-                      <Box
-                        textAlign={"center"}
-                        bg="#1c5c54"
-                        mx="42.5%"
-                        borderRadius={4}
-                        _hover={{
-                          bgColor: "#84aca4",
-                          cursor: "pointer",
-                        }}
-                      >
+                      <Box textAlign={"center"}>
                         <Input
                           type="submit"
                           value="Submit"
                           color="white"
                           bg="#1c5c54"
                           fontSize="1.5vw"
+                          size="lg"
                           fontFamily={"Inter"}
                           borderWidth={0}
                           borderRadius={4}
