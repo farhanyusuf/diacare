@@ -279,7 +279,11 @@ export default function Home() {
                   {!isFound ? (
                     <form onSubmit={handleSubmit}>
                       <label>
-                        <Text fontFamily={"Inter"} textAlign={"center"} color="black">
+                        <Text
+                          fontFamily={"Inter"}
+                          textAlign={"center"}
+                          color="black"
+                        >
                           {question}
                         </Text>
                         <Divider />
@@ -287,14 +291,16 @@ export default function Home() {
                           <Select
                             onChange={handleChange}
                             size="xl"
-                            border= "solid black"
+                            h="24px"
+                            border="solid black 0.5px"
                             bg="white"
+                            color="black"
                             borderRadius="2px"
                             fontFamily={"Inter"}
                           >
                             {option.map((opt, idx) => {
                               return (
-                                <option key={idx} value={idx} color="black">
+                                <option key={idx} value={idx} font-color="black">
                                   {opt}
                                 </option>
                               );
@@ -304,7 +310,16 @@ export default function Home() {
                       </label>
                       <Divider />
 
-                      <Box textAlign={"center"}>
+                      <Box
+                        textAlign={"center"}
+                        bg="#1c5c54"
+                        mx="42.5%"
+                        borderRadius={4}
+                        _hover={{
+                          bgColor: "#84aca4",
+                          cursor: "pointer",
+                        }}
+                      >
                         <Input
                           type="submit"
                           value="Submit"
@@ -402,7 +417,12 @@ export default function Home() {
                     justifyContent="center"
                     fontFamily={"Inter"}
                   >
-                    <Text fontSize="2vw" fontWeight={"800"} mr={4} color="black">
+                    <Text
+                      fontSize="2vw"
+                      fontWeight={"800"}
+                      mr={4}
+                      color="black"
+                    >
                       Hasil Diagnosis :
                     </Text>
                     <Text fontSize="2vw" fontWeight={"800"} color="black">
