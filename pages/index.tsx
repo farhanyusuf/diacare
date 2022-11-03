@@ -109,7 +109,7 @@ export default function Home() {
   };
 
   return (
-    <Flex direction={"column"} minH="100vh" minW="120vh" h="100%">
+    <Flex direction={"column"} minH="100vh" minW="100vh" w="100%">
       <Grid
         gridTemplateColumns="repeat(2, 1fr)"
         alignItems="center"
@@ -222,8 +222,7 @@ export default function Home() {
             />
             <Text
               fontSize="4vw"
-              ml="auto"
-              mr="auto"
+              textAlign={"center"}
               fontWeight={"semibold"}
               fontFamily="Inter"
             >
@@ -279,23 +278,17 @@ export default function Home() {
                   {!isFound ? (
                     <form onSubmit={handleSubmit}>
                       <label>
-                        <Text fontFamily={"Inter"} textAlign={"center"}>
+                        <Text fontFamily={"Inter"} textAlign={"center"} color="black">
                           {question}
                         </Text>
                         <Divider />
                         <Box textAlign={"center"}>
                           <Select
                             onChange={handleChange}
-                            size="lg"
-                            borderColor={"white"}
+                            size="xl"
+                            border= "solid black"
                             borderRadius="2px"
-                            shadow="1px 1px 1px 1px #747474"
                             fontFamily={"Inter"}
-                            css={{
-                              "-webkit-appearance": "none",
-                              "-moz-appearance": "none",
-                              "padding-left": "10px",
-                            }}
                           >
                             {option.map((opt, idx) => {
                               return (
@@ -407,10 +400,10 @@ export default function Home() {
                     justifyContent="center"
                     fontFamily={"Inter"}
                   >
-                    <Text fontSize="2vw" fontWeight={800} mr={8}>
+                    <Text fontSize="2vw" fontWeight={"semibold"} mr={8}>
                       Hasil Diagnosis :
                     </Text>
-                    <Text fontSize="2vw" fontWeight={800}>
+                    <Text fontSize="2vw" fontWeight={"semibold"}>
                       {status}
                     </Text>
                   </Flex>
